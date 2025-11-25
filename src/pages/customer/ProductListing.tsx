@@ -176,8 +176,8 @@ export default function ProductListing() {
                       className="w-full"
                     />
                     <div className="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
-                      <span>${priceRange[0]}</span>
-                      <span>${priceRange[1]}</span>
+                      <span>₹{priceRange[0]}</span>
+                      <span>₹{priceRange[1]}</span>
                     </div>
                   </div>
                 </div>

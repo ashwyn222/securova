@@ -333,7 +333,7 @@ export default function Checkout() {
                               </p>
                             </div>
                             <p className="font-bold text-gray-900 dark:text-white">
-                              ${(item.price * item.quantity).toFixed(2)}
+                              ₹{(item.price * item.quantity).toFixed(2)}
                             </p>
                           </div>
                         ))}
@@ -363,15 +363,15 @@ export default function Checkout() {
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between text-gray-700 dark:text-gray-300">
                     <span>Subtotal ({items.length} items)</span>
-                    <span>${subtotal.toFixed(2)}</span>
+                    <span>₹{subtotal.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-gray-700 dark:text-gray-300">
                     <span>Tax</span>
-                    <span>${tax.toFixed(2)}</span>
+                    <span>₹{tax.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-gray-700 dark:text-gray-300">
                     <span>Shipping</span>
-                    <span>{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span>
+                    <span>{shipping === 0 ? 'FREE' : `₹${shipping.toFixed(2)}`}</span>
                   </div>
                 </div>
 
@@ -381,7 +381,7 @@ export default function Checkout() {
                       Total
                     </span>
                     <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                      ${total.toFixed(2)}
+                      ₹{total.toFixed(2)}
                     </span>
                   </div>
                 </div>

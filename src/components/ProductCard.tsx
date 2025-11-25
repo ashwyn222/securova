@@ -83,7 +83,7 @@ export function ProductCard({ product }: ProductCardProps) {
           {/* Price & Add to Cart */}
           <div className="mt-auto flex items-center justify-between">
             <span className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-              ${product.price}
+              ₹{product.price}
             </span>
             {product.inStock && (
               <Button

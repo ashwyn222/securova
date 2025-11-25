@@ -84,7 +84,7 @@ export default function Cart() {
                         {item.category}
                       </p>
                       <p className="text-xl font-bold text-gray-900 dark:text-white">
-                        ${item.price}
+                        ₹{item.price}
                       </p>
                     </div>
 
@@ -123,7 +123,7 @@ export default function Cart() {
                       Subtotal
                     </p>
                     <p className="text-xl font-bold text-gray-900 dark:text-white">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₹{(item.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 </div>
@@ -140,19 +140,19 @@ export default function Cart() {
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between text-gray-700 dark:text-gray-300">
                     <span>Subtotal</span>
-                    <span>${subtotal.toFixed(2)}</span>
+                    <span>₹{subtotal.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-gray-700 dark:text-gray-300">
                     <span>Tax (10%)</span>
-                    <span>${tax.toFixed(2)}</span>
+                    <span>₹{tax.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-gray-700 dark:text-gray-300">
                     <span>Shipping</span>
-                    <span>{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span>
+                    <span>{shipping === 0 ? 'FREE' : `₹${shipping.toFixed(2)}`}</span>
                   </div>
                   {subtotal < 200 && (
                     <p className="text-sm text-teal-600 dark:text-teal-400">
-                      Add ${(200 - subtotal).toFixed(2)} more for free shipping!
+                      Add ₹{(200 - subtotal).toFixed(2)} more for free shipping!
                     </p>
                   )}
                 </div>
@@ -163,7 +163,7 @@ export default function Cart() {
                       Total
                     </span>
                     <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                      ${total.toFixed(2)}
+                      ₹{total.toFixed(2)}
                     </span>
                   </div>
                 </div>

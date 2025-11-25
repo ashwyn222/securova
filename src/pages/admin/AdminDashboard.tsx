@@ -7,7 +7,7 @@ export default function AdminDashboard() {
   const stats = [
     {
       label: 'Total Revenue',
-      value: `$${mockDashboardStats.revenue.toLocaleString()}`,
+      value: `₹${mockDashboardStats.revenue.toLocaleString()}`,
       change: `+${mockDashboardStats.revenueChange}%`,
       trend: 'up',
       icon: DollarSign,
@@ -110,7 +110,7 @@ export default function AdminDashboard() {
                       <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">{order.id}</td>
                       <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">{order.customerName}</td>
                       <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">{order.products.length} items</td>
-                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">${order.totalAmount.toFixed(2)}</td>
+                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">₹{order.totalAmount.toFixed(2)}</td>
                       <td className="px-6 py-4 text-sm">
                         <span className={`px-3 py-1 rounded-full text-xs ${
                           order.status === 'delivered' 

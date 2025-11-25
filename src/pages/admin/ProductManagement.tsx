@@ -62,7 +62,7 @@ export default function ProductManagement() {
                         </div>
                       </td>
                       <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">{product.category}</td>
-                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">${product.price}</td>
+                      <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">₹{product.price}</td>
                       <td className="px-6 py-4">
                         <span className={`px-3 py-1 rounded-full text-xs ${
                           product.inStock

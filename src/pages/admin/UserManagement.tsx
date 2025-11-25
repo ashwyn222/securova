@@ -48,7 +48,7 @@ export default function UserManagement() {
                         {user.orderCount}
                       </td>
                       <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
-                        ${user.totalSpent.toFixed(2)}
+                        ₹{user.totalSpent.toFixed(2)}
                       </td>
                       <td className="px-6 py-4">
                         <span className={`px-3 py-1 rounded-full text-xs ${

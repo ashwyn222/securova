@@ -187,7 +187,7 @@ export default function ProductDetails() {
 
               <div className="flex items-baseline space-x-4 mb-6">
                 <span className="text-4xl font-bold text-gray-900 dark:text-white">
-                  ${product.price}
+                  ₹{product.price}
                 </span>
                 <span className="text-gray-500 dark:text-gray-400">SKU: {product.sku}</span>
               </div>
