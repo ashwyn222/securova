@@ -21,8 +21,9 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
 
-  const login = async (email: string, password: string, role: 'customer' | 'admin' = 'customer') => {
+  const login = async (email: string, _password: string, role: 'customer' | 'admin' = 'customer') => {
     // Mock login - in real app, this would call an API
+    // Password is intentionally unused in mock implementation
     await new Promise(resolve => setTimeout(resolve, 500));
     
     const mockUser: User = {
@@ -40,8 +41,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser(null);
   };
 
-  const signup = async (name: string, email: string, password: string) => {
+  const signup = async (name: string, email: string, _password: string) => {
     // Mock signup - in real app, this would call an API
+    // Password is intentionally unused in mock implementation
     await new Promise(resolve => setTimeout(resolve, 500));
     
     const mockUser: User = {
